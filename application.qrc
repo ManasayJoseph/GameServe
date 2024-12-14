@@ -1,0 +1,6 @@
+<RCC>
+<qresource prefix="/pictures">
+    <file>resources/Main.png</file>
+    <file>resources/Horizontal.png</file>
+</qresource>
+</RCC>

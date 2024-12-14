@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Installer</class>
+ <widget class="QMainWindow" name="Installer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Welcome */
+
+QMainWindow{
+    background: qlineargradient(
+        x1: 0.6 , y1: .30,  /* Start point for the gradient */
+        x2: 0.25, y2: 0.5,  /* End point for the gradient */
+        stop: 0 rgba(39, 42, 118, 1.0), /* First color stop */
+        stop: 1 rgba(77, 127, 128, 1.0)  /* Second color stop */
+    );
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">color: #BFB7B7;
+font: 12pt &quot;Inter&quot;;</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-50</y>
+      <width>801</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="Welcome">
+     <property name="styleSheet">
+      <string notr="true">/* Welcome */
+
+QWidget#Welcome{
+    background: qlineargradient(
+        x1: 0.6 , y1: .30,  /* Start point for the gradient */
+        x2: -.5, y2: 0.5,  /* End point for the gradient */
+        stop: 0 rgba(39, 42, 118, 1.0), /* First color stop */
+        stop: 1 rgba(77, 127, 128, 1.0)  /* Second color stop */
+    );
+}</string>
+     </property>
+     <widget class="QLabel" name="LWelcome">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>80</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+QLabel {
+	font: 16pt &quot;Inter&quot;;
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Welcome to GameServe Installer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Motto">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>310</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+
+font: italic 12pt &quot;Inter&quot;;
+QLabel {
+
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Self Hosting Made Easy</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextButton1">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>350</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Rectangle 1 */
+
+QPushButton{ /* Replace #specificFrame with the actual object name of your widget */
+
+    background: qlineargradient(
+        x1: 0.15, y1: 0,   /* Start point of gradient to approximate 96.34deg */
+        x2: 1, y2: 1,      /* End point for similar angle */
+        stop: 0 #272A76,   /* Starting color */
+        stop: 1 rgba(77, 127, 128, 0.5)  /* Ending color */
+    );
+    border: 1px solid #FFFFFF;
+    border-radius: 20px ; /* Matches 50px radius of the rectangle */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>160</y>
+        <width>151</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/pictures/resources/Main.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Location">
+     <property name="styleSheet">
+      <string notr="true">/* Welcome */
+
+QWidget#Location{
+    background: qlineargradient(
+        x1: 0.6 , y1: .30,  /* Start point for the gradient */
+        x2: -.5, y2: 0.5,  /* End point for the gradient */
+        stop: 0 rgba(39, 42, 118, 1.0), /* First color stop */
+        stop: 1 rgba(77, 127, 128, 1.0)  /* Second color stop */
+    );
+}</string>
+     </property>
+     <widget class="QFrame" name="Horizontal">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/pictures/resources/Horizontal.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Heading">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>90</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+QLabel {
+	font: 16pt &quot;Inter&quot;;
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Select Installation Folder</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Size">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>300</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+
+font: italic 12pt &quot;Inter&quot;;
+QLabel {
+
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Required Space: 150MB</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="selectedPathLabel">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>220</y>
+        <width>391</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+
+font: italic 12pt &quot;Inter&quot;;
+QLabel {
+
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>NONE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="browse">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>250</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Rectangle 1 */
+
+QPushButton{ /* Replace #specificFrame with the actual object name of your widget */
+
+    background: qlineargradient(
+        x1: 0.15, y1: 0,   /* Start point of gradient to approximate 96.34deg */
+        x2: 1, y2: 1,      /* End point for similar angle */
+        stop: 0 #272A76,   /* Starting color */
+        stop: 1 rgba(77, 127, 128, 0.5)  /* Ending color */
+    );
+    border: 1px solid #FFFFFF;
+    border-radius: 1px ; /* Matches 50px radius of the rectangle */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Browse...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Tip">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>190</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+QLabel {
+	font: 12pt &quot;Inter&quot;;
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Choose Where to Install GameServe:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextButton2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>370</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Rectangle 1 */
+
+QPushButton{ /* Replace #specificFrame with the actual object name of your widget */
+
+    background: qlineargradient(
+        x1: 0.15, y1: 0,   /* Start point of gradient to approximate 96.34deg */
+        x2: 1, y2: 1,      /* End point for similar angle */
+        stop: 0 #272A76,   /* Starting color */
+        stop: 1 rgba(77, 127, 128, 0.5)  /* Ending color */
+    );
+    border: 1px solid #FFFFFF;
+    border-radius: 20px ; /* Matches 50px radius of the rectangle */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Installing">
+     <property name="styleSheet">
+      <string notr="true">QWidget#Installing{
+    background: qlineargradient(
+        x1: 0.6 , y1: .30,  /* Start point for the gradient */
+        x2: -.5, y2: 0.5,  /* End point for the gradient */
+        stop: 0 rgba(39, 42, 118, 1.0), /* First color stop */
+        stop: 1 rgba(77, 127, 128, 1.0)  /* Second color stop */
+    );
+}</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>210</y>
+        <width>491</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar {
+
+     border-radius: 10px;
+     background-color: #BFB7B7;
+	 text-align : right; 
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+ QProgressBar::chunk {
+     background-color: #272A76;
+     width: 20px;
+	margin-top:4px;
+	margin-bottom:4px;		
+ }</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="HInstalling">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>80</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+QLabel {
+	font: 16pt &quot;Inter&quot;;
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Installing</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="Horizontal_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/pictures/resources/Horizontal.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Status">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InstallTip">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>581</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 8pt &quot;Inter&quot;;</string>
+      </property>
+      <property name="text">
+       <string>The Program will automatically download and install playit agent and java. 
+If you have already downloaded these programs. Paste the files into install directory and rerun installer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>250</y>
+        <width>491</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0,0,0,0);
+border:none;
+color : #BFB7B7;</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ThankYou">
+     <property name="styleSheet">
+      <string notr="true">/* Welcome */
+
+QWidget#ThankYou		{
+    background: qlineargradient(
+        x1: 0.6 , y1: .30,  /* Start point for the gradient */
+        x2: -.5, y2: 0.5,  /* End point for the gradient */
+        stop: 0 rgba(39, 42, 118, 1.0), /* First color stop */
+        stop: 1 rgba(77, 127, 128, 1.0)  /* Second color stop */
+    );
+}</string>
+     </property>
+     <widget class="QLabel" name="hThankYou">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>80</y>
+        <width>451</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+QLabel {
+	font: 16pt &quot;Inter&quot;;
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Thank You For Choosing GameServe</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="Horizontal_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/pictures/resources/Horizontal.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hThankYou_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>200</y>
+        <width>661</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Welcome to GameServe Installer */
+
+QLabel {
+	font: 12pt &quot;Inter&quot;;
+    color: #BFB7B7;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>We are sure GameServe can be used to accomplish your server goals. 
+Be confident to contact us for any queries.</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
